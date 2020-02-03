@@ -26,6 +26,11 @@ Implement following validation rules:
  - check if `newReservation.LectureHallNumber` points at existing lecture hall. If it's not, set result `|= ValidationResult.HallDoesNotExist`. Use `_queryAllLectureHalls` to get all extisting lecture halls
  - check if `newReservation.LecturerId` points at existing lecturer. If it's not, set result `|= ValidationResult.LecturerDoesNotExist`. Use `_queryAllLecturers` to get all extisting lecturers
 
+Build Front-End:
+ - `Home` List all existing reservations with lecture hall and lecturer details.
+   - `Filter` : Add filter to display all existing lecturers and lecture halls
+ - `New Reservation` : Create New Reservation and display/handle all validation messages
+
 **Remember!** Check ALL validation rules and set result with appropriate enum flag described above.
 Note that for reservation dates, we take into account only date and an hour, minutes and seconds doesn't matter.
 
